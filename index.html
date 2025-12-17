@@ -37,7 +37,7 @@
       #refresh-btn:hover {
         scale: 1.12;
       }
-      .search,
+      #search,
       #products-list,
       .cart-summary {
         border: none;
@@ -47,7 +47,7 @@
         border-radius: 5px;
         background-color: #fff;
       }
-      .search {
+      #search {
         width: 100%;
         /* border: 0.5px gray solid; */
         padding: 12px;
@@ -90,8 +90,8 @@
       <main class="container">
         <div class="products-list-wrapper">
           <input
-            class="search"
-            type="search"
+            id="search"
+            type="text"
             placeholder="Search products by title..."
           />
           <div id="products-list"></div>
