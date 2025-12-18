@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>shopping cart</title>
     <style>
+      *{
+        box-sizing: border-box;
+      }
       body {
         background-color: whitesmoke;
       }
@@ -39,7 +42,7 @@
       }
       #search,
       #products-list,
-      .cart-summary {
+      #cart-summary {
         border: none;
         box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.52);
         -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.52);
@@ -70,7 +73,7 @@
         border-bottom: black 1px solid;
         width: 100%;
       } */
-      .cart-summary {
+      #cart-summary {
         width: 35%;
         height: 300px;
         padding-left: 15px;
@@ -96,9 +99,7 @@
           />
           <div id="products-list"></div>
         </div>
-        <div class="cart-summary">
-          <h2>Cart Summary</h2>
-        </div>
+        <ul id="cart-summary"></ul>
       </main>
     </section>
       <script src="./index.js"></script>
